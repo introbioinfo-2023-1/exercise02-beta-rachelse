@@ -1,0 +1,9 @@
+CDS	162498	160188
+Selenocysteine	4	4
+exon	195484	186414
+five_prime_utr	46620	46060
+gene	23932	17559
+start_codon	30721	30389
+stop_codon	30720	30296
+three_prime_utr	33623	33034
+transcript	41200	34740

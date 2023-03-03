@@ -1,1 +1,9 @@
-
+CDS	160188
+Selenocysteine	4
+exon	186414
+five_prime_utr	46060
+gene	17559
+start_codon	30389
+stop_codon	30296
+three_prime_utr	33034
+transcript	34740
