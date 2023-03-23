@@ -1,3 +1,4 @@
 #!genome-build BDGP6.32
 #!genome-version BDGP6.32
 #!genome-build-accession GCA_000001215.4
+#!genebuild-last-updated 2020-08
