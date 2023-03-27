@@ -49,6 +49,146 @@
       "comparison": "exact",
       "timeout": 10,
       "points": null
+    },
+    {
+      "name": "02_1 result",
+      "setup": "",
+      "run": "cat  result/result02_1.txt",
+      "input": "",
+      "output": "#!genome-build BDGP6.32\r\n#!genome-version BDGP6.32\r\n#!genome-build-accession GCA_000001215.4\r\n#!genebuild-last-updated 2020-08",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "02_2 result",
+      "setup": "",
+      "run": "cat  result/result02_2.txt",
+      "input": "",
+      "output": "564802",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "02_3 result",
+      "setup": "",
+      "run": "cat  result/result02_3.txt",
+      "input": "",
+      "output": "4",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "03_1 result",
+      "setup": "",
+      "run": "cat  result/result03_1.txt",
+      "input": "",
+      "output": "211000022278279\r\n211000022278436\r\n211000022278449\r\n211000022278760\r\n211000022278978\r\n211000022279165\r\n211000022279188\r\n211000022279264\r\n211000022279392\r\n211000022279681\r\n211000022280328\r\n211000022280341\r\n211000022280347\r\n211000022280481\r\n211000022280494\r\n211000022280703\r\n2L\r\n2R\r\n3L\r\n3R\r\n4\r\nUnmapped_Scaffold_4_D1555_D1692\r\nUnmapped_Scaffold_60_D1601\r\nUnmapped_Scaffold_8_D1580_D1567\r\nX\r\nY\r\nY_mapped_Scaffold_9_D1573\r\nmitochondrion_genome\r\nrDNA",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "03_2 result",
+      "setup": "",
+      "run": "cat  result/result03_2.csv",
+      "input": "",
+      "output": "2L,100974\r\n2R,116279\r\n3L,105449\r\n3R,129986\r\n4,9579\r\nX,101520",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "04_1 result",
+      "setup": "",
+      "run": "cat  result/result04_1.txt",
+      "input": "",
+      "output": "CDS\t162498\r\nSelenocysteine\t4\r\nexon\t195484\r\nfive_prime_utr\t46620\r\ngene\t23932\r\nstart_codon\t30721\r\nstop_codon\t30720\r\nthree_prime_utr\t33623\r\ntranscript\t41200",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "04_2 result",
+      "setup": "",
+      "run": "cat  result/result04_2.txt",
+      "input": "",
+      "output": "3R\tFlyBase\tgene\t28337019\t28339765\t.\t-\t.\tgene_id \"FBgn0039580\"; gene_name \"Gfat2\"; gene_source \"FlyBase\"; gene_biotype \"protein_coding\";\r\n3R\tFlyBase\tgene\t4126442\t4137882\t.\t+\t.\tgene_id \"FBgn0287209\"; gene_name \"Gfat1\"; gene_source \"FlyBase\"; gene_biotype \"protein_coding\";",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "04_3 result",
+      "setup": "",
+      "run": "cat  result/result04_3.txt",
+      "input": "",
+      "output": "Gfat1-RJ\r\nGfat1-RL\r\nGfat1-RD\r\nGfat1-RN\r\nGfat1-RK\r\nGfat1-RF\r\nGfat1-RM\r\nGfat1-RA\r\nGfat1-RH",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "04_4 result",
+      "setup": "",
+      "run": "cat  result/result04_4.csv",
+      "input": "",
+      "output": "Gfat1-RA,9\r\nGfat1-RD,8\r\nGfat1-RF,9\r\nGfat1-RH,8\r\nGfat1-RJ,10\r\nGfat1-RK,5\r\nGfat1-RL,9\r\nGfat1-RM,7\r\nGfat1-RN,9",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "04_5 result",
+      "setup": "",
+      "run": "cat  result/result04_5.csv",
+      "input": "",
+      "output": "Gfat1-RA,2426\r\nGfat1-RJ,2538\r\nGfat1-RN,2628\r\nGfat1-RD,2363\r\nGfat1-RM,2339\r\nGfat1-RH,2601\r\nGfat1-RK,3726\r\nGfat1-RL,2390\r\nGfat1-RF,2290",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "05_2 result",
+      "setup": "",
+      "run": "cat  result/result05_2.csv",
+      "input": "",
+      "output": "77814,82374",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "05_3_1 result",
+      "setup": "",
+      "run": "cat  result/result05_3_1.txt",
+      "input": "",
+      "output": "CDS\t160188\r\nSelenocysteine\t4\r\nexon\t186414\r\nfive_prime_utr\t46060\r\ngene\t17559\r\nstart_codon\t30389\r\nstop_codon\t30296\r\nthree_prime_utr\t33034\r\ntranscript\t34740",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "05_3_2 awk",
+      "setup": "",
+      "run": "grep -q -P '(?=.*NR)(?=.*==)(?=.*FNR)(?=.*\\$1)(?=.*\\$2)' command/join.awk && grep -q -P '(?=.*\\$1)(?=.*\\$0)' command/join.awk && echo \"correct\"",
+      "input": "",
+      "output": "correct",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "05_3_3 result",
+      "setup": "",
+      "run": "cat  result/result05_3_3.txt",
+      "input": "",
+      "output": "CDS\t162498\t160188\r\nSelenocysteine\t4\t4\r\nexon\t195484\t186414\r\nfive_prime_utr\t46620\t46060\r\ngene\t23932\t17559\r\nstart_codon\t30721\t30389\r\nstop_codon\t30720\t30296\r\nthree_prime_utr\t33623\t33034\r\ntranscript\t41200\t34740",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
     }
   ]
 }
