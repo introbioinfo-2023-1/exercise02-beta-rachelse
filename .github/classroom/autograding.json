@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "01 command",
+      "setup": "",
+      "run": "grep -q -P '(?=.*wget)(?=.*d_melanogaster.genes.gtf.gz)(?=.*ftp://ftp.ensembl.org)(?=.*BDGP6.32.109.gtf.gz)(?=.*release-109)' command/command01.sh  && grep -q -P '(?=.*gunzip)(?=.*d_melanogaster.genes.gtf.gz)' command/command01.sh  && echo \"correct\"",
+      "input": "",
+      "output": "correct",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "02 command",
+      "setup": "",
+      "run": "grep -q -P '(?=.*awk|grep)(?=.*#)(?=.*d_melanogaster)' command/command02.sh  && grep -q -P '(?=.*awk|grep)(?=.*#)(?=.*d_melanogaster)(?=.*result02_2)' command/command02.sh  && grep -q -P '(?=.*awk|grep)(?=.*#)(?=.*d_melanogaster)(?=.*result02_3)' command/command02.sh  && echo \"correct\"",
+      "input": "",
+      "output": "correct",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "03 command",
+      "setup": "",
+      "run": "grep -q -P '(?=.*awk|grep)(?=.*#)(?=.*d_melanogaster)(?=.*sort)(?=.*uniq)' command/command03.sh  && grep -q -P '(?=.*awk|grep)(?=.*#)(?=.*d_melanogaster)(?=.*sort)(?=.*uniq -c)(?=.*BEGIN)' command/command03.sh  && echo \"correct\"",
+      "input": "",
+      "output": "correct",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "04 command",
+      "setup": "",
+      "run": "grep -q -P '(?=.*awk|grep)(?=.*#)(?=.*d_melanogaster)(?=.*\\$3)(?=.*sort)(?=.*uniq -c)' command/command04.sh && grep -q -P '(?=.*awk|grep)(?=.*#)(?=.*d_melanogaster)(?=.*\\$3)(?=.*gene)(?=.*Gfat1)' command/command04.sh && grep -q -P '(?=.*awk|grep)(?=.*#)(?=.*d_melanogaster)(?=.*\\$3)(?=.*transcript)(?=.*Gfat1)(?=.*tr -d)(?=.*\\$12)' command/command04.sh && grep -q -P '(?=.*awk|grep)(?=.*#)(?=.*d_melanogaster)(?=.*\\$3)(?=.*exon)(?=.*Gfat1)(?=.*\\$9)(?=.*tr -d)(?=.*\\$14)(?=.*\\$14)' command/command04.sh && grep -q -P '(?=.*awk|grep)(?=.*-F)(?=.*\\\\t)(?=.*\\$5)(?=.*\\$4)(?=.*\\$9)' command/command04.sh && grep -q -P '(?=.*awk|grep)(?=.*BEGIN)(?=.*END)(?=.*\\$15)' command/command04.sh && echo \"correct\"",
+      "input": "",
+      "output": "correct",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "05 command",
+      "setup": "",
+      "run": "grep -q -P '(?=.*wget)(?=.*d_melanogaster_old.genes.gtf.gz)(?=.*ftp://ftp.ensembl.org)(?=.*BDGP6.87.gtf.gz)(?=.*release-87)' command/command05.sh  && grep -q -P '(?=.*gunzip)(?=.*d_melanogaster_old)' command/command05.sh  && grep -q -P '(?=.*awk|grep)(?=.*#)' command/command05.sh  && grep -q -P '(?=.*awk|grep)(?=.*BEGIN)(?=.*\\$3)(?=.*\\$7)(?=.*END)' command/command05.sh  && grep -q -P '(?=.*awk|grep)(?=.*#)(?=.*\\$3)' command/command05.sh  && grep -q -P '(?=.*sort)' command/command05.sh  && grep -q -P '(?=.*uniq -c)' command/command05.sh  && grep -q -P '(?=.*awk|grep)(?=.*\\$2)(?=.*\\$1)' command/command05.sh  && grep -q -P '(?=.*join.awk)(?=.*result05_3_1)(?=.*result04_1)(?=.*>)(?=.*result05_3_3)' command/command05.sh  && echo \"correct\"",
+      "input": "",
+      "output": "correct",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
