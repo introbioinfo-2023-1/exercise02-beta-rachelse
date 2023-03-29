@@ -1,12 +1,6 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10304775&assignment_repo_type=AssignmentRepo)
----
-Organization: Seoul National University
-Course: Introduction to Bioinformatics
-Exercise: Bash introduction #2
-Semester: Spring 2022
-Professor: Asst. Prof. M. Steinegger (martin.steinegger@snu.ac.kr)
-T.A: Jaebeom Kim (jbeom@snu.ac.kr)
----
+| Organization | Course | Exercise | Semester | Professor | T.A. | 
+| --- | --- | --- | --- | --- | --- |
+| Seoul National University | Introduction to Bioinformatics | Bash introduction #1 | Spring 2023 | Asst. Prof. M. Steinegger (martin.steinegger@snu.ac.kr) | Luna Jang (jse9512@snu.ac.kr) <br /> Rachel Kim (eunbelivable@snu.ac.kr)|
 
 # Exercise02: Bash introduction #2
 
@@ -38,7 +32,7 @@ To submit your result, follow these steps:
 ## command01.sh
 1. Download the GTF file of Drosophila melanogaster and save it as **d_melanogaster.genes.gtf.gz** in the "data" directory. (No result file)
 
-   Link: ftp://ftp.ensembl.org/pub/release-103/gtf/drosophila_melanogaster/Drosophila_melanogaster.BDGP6.32.103.gtf.gz
+   Link: "ftp://ftp.ensembl.org/pub/release-109/gtf/drosophila_melanogaster/Drosophila_melanogaster.BDGP6.32.109.gtf.gz"
 
 2. Extract the gzip-compressed GTF file. (No result file)
 
@@ -64,8 +58,8 @@ The first few lines of GTF file begin with "#". These lines are called header li
    ...
    ```
 
-2. Count genes in each chromosome and find **the chromosomes which have 100 or more genes**.
-   Sort the name of chromosomes with 100 or more genes by the default order and write the **chromosome names as column 1** and
+2. Count genes in each chromosome and find **the chromosomes which have 700 or more genes**.
+   Sort the name of chromosomes with 700 or more genes by the default order and write the **chromosome names as column 1** and
    the **count of genes as column 2** to **result03_2.csv**.
    > Columns in CSV file, which means Comma-Separated Values, should be separated with comma, ",".
    > When counting the number of genes in a chromosome, count the lines of which the feature type is "gene".
@@ -95,29 +89,29 @@ The first few lines of GTF file begin with "#". These lines are called header li
    ...
    ```
 
-2. Find the line in which the feature type is "gene" and the gene name is "Raf".
+2. Find the line in which the feature type is "gene" and the gene name is "Gfat1".
    Save the line to **result04_2.txt**.
 
-3. The "Raf" gene has multiple transcripts. Find all transcripts and store the attribute "transcript_name" (e.g., transcript_name "Raf-RE"; ) to **result04_3.txt**.
+3. The "Gfat1" gene has multiple transcripts. Find all transcripts and store the attribute "transcript_name" (e.g., transcript_name "Gfat1-RN"; ) to **result04_3.txt**.
    - Example (please follow this format)
    ```
-   Raf-XX
-   Raf-AA
+   Gfat1-XX
+   Gfat1-AA
    ...
    ```
 
-4. Count the number of exons of each transcript from "Raf" gene and save the count to **result04_4.csv** (remember CSV files are comma separated). Write the **transcript names (value of transcript_name) as column 1** and the **count of exons as column 2** like this:
+4. Count the number of exons of each transcript from "Gfat1" gene and save the count to **result04_4.csv** (remember CSV files are comma separated). Write the **transcript names (value of transcript_name) as column 1** and the **count of exons as column 2** like this:
    ```
-   Raf-XX,5
-   Raf-AA,3
+   Gfat1-XX,5
+   Gfat1-AA,3
    ...
    ```
 
-5. Calculate the total exon length of each transcript from "Raf" gene and save the result to **result04_5.csv**.
+5. Calculate the total exon length of each transcript from "Gfat1" gene and save the result to **result04_5.csv**.
    Write the **transcript names as column 1** and the **length of exons as column 2** like this:
    ```
-   Raf-XX,3300
-   Raf-AA,2500
+   Gfat1-XX,3300
+   Gfat1-AA,2500
    ...
    ```
    > The position of GTF is 1-based, which means the 100nt-length region from 1st position to 100th position in chromosome 1 is represented as "chr1 1 100". Please consider this when calculating
@@ -126,23 +120,23 @@ The first few lines of GTF file begin with "#". These lines are called header li
 ## command05.sh
 1. Download old version of *D. melanogaster* GTF file and unzip it as "d_melanogaster_old.genes.gtf" in data directory. (No result file)
 
-   Link: ftp://ftp.ensembl.org/pub//release-89/gtf/drosophila_melanogaster/Drosophila_melanogaster.BDGP6.89.gtf.gz
+   Link: ftp://ftp.ensembl.org/pub/release-87/gtf/drosophila_melanogaster/Drosophila_melanogaster.BDGP6.87.gtf.gz
 
-2. Count the genes in the positive (+) and negative (-) strand of old *D. melanogaster* genome
+2. Count the Coding Sequences in the positive (+) and negative (-) strand of old *D. melanogaster* genome
    and save the counts to **result05_2.csv**.
    - Example (please follow this format)
    ```
-   x,y
+   p,n
    ```
 
-3. The gtf file is keeping updated to cover new discoveries. Let's compare the changes in the number of genomic features (third column in gtf files like exon, gene, CDS, etc). 
+3. The gtf file is keeping updated to cover new discoveries. Let's compare the changes in the number of genomic features (exon, gene, CDS, etc). 
 
-   3-1. Count the distinct genomic feature (exon, gene, and others) types of d_melanogaster_old.genes.gtf. Sort the values by default order and write them in **result05_3_1.txt** following the format of the example of command04-1.
+   3-1. Count the distinct genomic feature types of d_melanogaster_old.genes.gtf. Sort the values by default order and write them in **result05_3_1.txt** following the format of the example of command04-1.
 
    3-2. Check join.awk in the command directory. It is from the lecture slide (21th of Linux 2 slides). You have to make a small change in the code to follow the printing format of the example of command05-3-3. Your changes in join.awk should be pushed.
 
-   3-3. Join the result05_3_1.txt and result05_3_2.txt using your join.sh and print the result in **result05_3_3.txt**
-   - Example (Tab seperated, write the values from the old version in the 3rd column)
+   3-3. Join the result05_3_1.txt and result04_1.txt using your join.awk and print the result in **result05_3_3.txt**
+   - Tab seperated, write the values from the old version(result05_3_1.txt) in the 3rd column
    ```
    CDS   1234  12345
    Selenocysteine 1234 2345
