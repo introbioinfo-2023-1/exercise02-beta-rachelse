@@ -1,6 +1,6 @@
 # command04.sh
 # 1.  Extract the distinct genomic feature types (e.g. gene, exon, transcript ...) from the GTF file.
-#     Sort the values alphabetically and save them to result04_1.txt.
+#     Sort and count the values alphabetically and save them to result04_1.txt.
 grep -v "^#" ~/exercise02/data/d_melanogaster.genes.gtf | awk '{print $3}' | sort | uniq -c | awk '{print $2"\t"$1}' > ~/exercise02/result/result04_1.txt
 # 2. Find the line in which the feature type is "gene" and the gene name is "Gfat1".
 #    Save the line to **result04_2.txt**.
