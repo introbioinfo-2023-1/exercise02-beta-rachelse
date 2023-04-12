@@ -23,7 +23,7 @@
     {
       "name": "03 command",
       "setup": "",
-      "run": "grep -q -P '(?=.*awk|grep)(?=.*#)(?=.*d_melanogaster)(?=.*sort)(?=.*uniq)' command/command03.sh  && grep -q -P '(?=.*awk|grep)(?=.*#)(?=.*d_melanogaster)(?=.*sort)(?=.*uniq -c)(?=.*BEGIN)' command/command03.sh  && echo \"correct\"",
+      "run": "grep -q -P '(?=.*awk|grep)(?=.*\\$1)(?=.*Scaffold)(?=.*sort)(?=.*uniq)' command/command03.sh  && grep -q -P '(?=.*awk|grep)(?=.*\\$1)(?=.*Scaffold)(?=.*sort)(?=.*uniq -c)(?=.*BEGIN)' command/command03.sh  && echo \"correct\"",
       "input": "",
       "output": "correct",
       "comparison": "exact",
@@ -85,7 +85,7 @@
       "setup": "",
       "run": "cat  result/result03_1.txt",
       "input": "",
-      "output": "211000022278279\r\n211000022278436\r\n211000022278449\r\n211000022278760\r\n211000022278978\r\n211000022279165\r\n211000022279188\r\n211000022279264\r\n211000022279392\r\n211000022279681\r\n211000022280328\r\n211000022280341\r\n211000022280347\r\n211000022280481\r\n211000022280494\r\n211000022280703\r\n2L\r\n2R\r\n3L\r\n3R\r\n4\r\nUnmapped_Scaffold_4_D1555_D1692\r\nUnmapped_Scaffold_60_D1601\r\nUnmapped_Scaffold_8_D1580_D1567\r\nX\r\nY\r\nY_mapped_Scaffold_9_D1573\r\nmitochondrion_genome\r\nrDNA",
+      "output": "211000022278279\r\n211000022278436\r\n211000022278449\r\n211000022278760\r\n211000022278978\r\n211000022279165\r\n211000022279188\r\n211000022279264\r\n211000022279392\r\n211000022279681\r\n211000022280328\r\n211000022280341\r\n211000022280347\r\n211000022280481\r\n211000022280494\r\n211000022280703\r\n2L\r\n2R\r\n3L\r\n3R\r\n4\r\nX\r\nY\r\nmitochondrion_genome\r\nrDNA",
       "comparison": "exact",
       "timeout": 10,
       "points": null
