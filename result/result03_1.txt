@@ -19,7 +19,11 @@
 3L
 3R
 4
+Unmapped_Scaffold_4_D1555_D1692
+Unmapped_Scaffold_60_D1601
+Unmapped_Scaffold_8_D1580_D1567
 X
 Y
+Y_mapped_Scaffold_9_D1573
 mitochondrion_genome
 rDNA
