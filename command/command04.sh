@@ -4,7 +4,7 @@
 grep -v "^#" ~/exercise02/data/d_melanogaster.genes.gtf | awk '{print $3}' | sort | uniq -c | awk '{print $2"\t"$1}' > ~/exercise02/result/result04_1.txt
 # 2. Find the line in which the feature type is "gene" and the gene name is "Gfat1".
 #    Save the line to **result04_2.txt**.
-grep -v "^#" ~/exercise02/data/d_melanogaster.genes.gtf | awk '$3 == "gene" && $11 == "gene_name" && $12 ~ /Gfat/ {print $0}' > ~/exercise02/result/result04_2.txt
+grep -v "^#" ~/exercise02/data/d_melanogaster.genes.gtf | awk '$3 == "gene" && $11 == "gene_name" && $12 ~ /Gfat1/ {print $0}' > ~/exercise02/result/result04_2.txt
 
 # 3. The "Gfat1" gene has multiple transcripts. Find all transcripts and store the
 #    attribute "transcript_name" (e.g., transcript_name "Gfat1-RN";) to result04_3.txt.

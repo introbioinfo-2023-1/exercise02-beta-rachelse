@@ -1,2 +1,1 @@
-3R	FlyBase	gene	28337019	28339765	.	-	.	gene_id "FBgn0039580"; gene_name "Gfat2"; gene_source "FlyBase"; gene_biotype "protein_coding";
 3R	FlyBase	gene	4126442	4137882	.	+	.	gene_id "FBgn0287209"; gene_name "Gfat1"; gene_source "FlyBase"; gene_biotype "protein_coding";
